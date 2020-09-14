@@ -1,0 +1,23 @@
+.app {
+  height: 100vh;
+  background-color: #1d1d1d;
+  display: grid;
+  place-items: center;
+
+  &__videos {
+    position: relative;
+    height: 800px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 20px;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
